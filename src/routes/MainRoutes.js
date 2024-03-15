@@ -4,6 +4,14 @@ import { lazy } from 'react';
 import Loadable from 'components/Loadable';
 import MainLayout from 'layout/MainLayout';
 
+// render - introduce
+const Mission = Loadable(lazy(() => import('pages/mission')));
+const Work = Loadable(lazy(() => import('pages/work')));
+const Art = Loadable(lazy(() => import('pages/art')));
+const Sport = Loadable(lazy(() => import('pages/sport')));
+const Interest = Loadable(lazy(() => import('pages/interest')));
+const Replenish = Loadable(lazy(() => import('pages/replenish')));
+
 // render - dashboard
 const DashboardDefault = Loadable(lazy(() => import('pages/dashboard')));
 
@@ -25,6 +33,30 @@ const MainRoutes = {
     {
       path: '/',
       element: <DashboardDefault />
+    },
+    {
+      path: '/mission',
+      element: <Mission />
+    },
+    {
+      path: '/work',
+      element: <Work />
+    },
+    {
+      path: '/art',
+      element: <Art />
+    },
+    {
+      path: '/sport',
+      element: <Sport />
+    },
+    {
+      path: '/interest',
+      element: <Interest />
+    },
+    {
+      path: '/replenish',
+      element: <Replenish />
     },
     {
       path: 'color',

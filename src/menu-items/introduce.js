@@ -4,19 +4,19 @@ const introduce = {
   type: 'group',
   children: [
     {
-      id: 'mission',
-      title: '使命',
-      type: 'item',
-      url: '/mission',
-      icon: "",
-      breadcrumbs: false
-    },
-    {
       id: 'work',
       title: '工作',
       type: 'item',
       url: '/work',
       icon:"",
+      breadcrumbs: false
+    },
+    {
+      id: 'mission',
+      title: '使命',
+      type: 'item',
+      url: '/mission',
+      icon: "",
       breadcrumbs: false
     },
     {

@@ -1,14 +1,10 @@
 import React from 'react';
 
-// material-ui
 import {
   Box,
   Stack,
   Typography
 } from '@mui/material';
-
-
-// ==============================|| DASHBOARD - DEFAULT ||============================== //
 
 const Replenish = () => {
 
